@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reflexlab-400.netlify.app/sitemap.xml
+Sitemap: https://reactmeter.com/sitemap.xml

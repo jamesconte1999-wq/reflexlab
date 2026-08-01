@@ -1,5 +1,5 @@
 /* ============================================================
-   ReflexLab core engine
+   ReactMeter core engine
    Shared by every test page: test registry, scoring/percentiles,
    localStorage stats & streaks, result rendering, share cards,
    confetti, toasts, header/footer chrome, ad + analytics mounts.
@@ -8,7 +8,7 @@
   "use strict";
 
   var CFG = window.RLCONFIG || {};
-  var STORE_KEY = "reflexlab.v1";
+  var STORE_KEY = "reactmeter.v1";
 
   /* ---------------- tiny helpers ---------------- */
 
@@ -283,14 +283,14 @@
     var t = TESTS[testId];
     var pct = Math.round(percentile(testId, value));
     var g = grade(percentile(testId, value));
-    var text = (CFG.siteName || "ReflexLab") + " | " + t.name + "\n" +
+    var text = (CFG.siteName || "ReactMeter") + " | " + t.name + "\n" +
       "My score: " + t.fmtText(value) + " - better than " + pct + "% of players (rank " + g.label + ")\n" +
       "Think you can beat me? " + pageUrl();
     doShare(text);
   }
 
   function shareSite() {
-    var text = (CFG.siteName || "ReflexLab") + " - " + (CFG.tagline || "free reflex and memory tests") + "\n" + pageUrl();
+    var text = (CFG.siteName || "ReactMeter") + " - " + (CFG.tagline || "free reflex and memory tests") + "\n" + pageUrl();
     doShare(text);
   }
 
@@ -462,7 +462,7 @@
           : "";
         slot.innerHTML =
           '<div class="house-ad">' +
-            '<div class="ha-text"><b>Enjoying ' + esc(CFG.siteName || "ReflexLab") + "?</b>" +
+            '<div class="ha-text"><b>Enjoying ' + esc(CFG.siteName || "ReactMeter") + "?</b>" +
             "<p>Share it with a friend - it is the best way to keep it free.</p></div>" +
             '<button class="btn btn-sm" data-share-site>Share the site</button>' + donate +
           "</div>";
@@ -493,7 +493,7 @@
 
   function mountChrome() {
     $all(".js-year").forEach(function (el) { el.textContent = new Date().getFullYear(); });
-    $all(".js-sitename").forEach(function (el) { el.textContent = CFG.siteName || "ReflexLab"; });
+    $all(".js-sitename").forEach(function (el) { el.textContent = CFG.siteName || "ReactMeter"; });
     updateStreakPill();
     mountAds();
     mountAnalytics();

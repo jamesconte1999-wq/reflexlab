@@ -1,14 +1,14 @@
 /*
- * ReflexLab configuration.
+ * ReactMeter configuration.
  * Everything monetization- and branding-related is plugged in here,
  * so you never have to touch game code to start earning.
  */
 window.RLCONFIG = {
-  siteName: "ReflexLab",
+  siteName: "ReactMeter",
   tagline: "Test your reflexes. Train your brain. Beat the world.",
 
   // Used for share links. Update again if you connect a custom domain.
-  baseUrl: "https://reflexlab-400.netlify.app",
+  baseUrl: "https://reactmeter.com",
 
   // ---- Google AdSense ----------------------------------------------------
   // 1) Get approved at https://adsense.google.com (needs a real domain).
@@ -23,7 +23,7 @@ window.RLCONFIG = {
 
   // ---- Analytics (optional, pick one) ------------------------------------
   analytics: {
-    plausibleDomain: "",   // e.g. "reflexlab.gg" if you use plausible.io
+    plausibleDomain: "",   // e.g. "reactmeter.com" if you use plausible.io
     gaMeasurementId: ""    // e.g. "G-XXXXXXXXXX" for Google Analytics 4
   },
 

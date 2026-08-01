@@ -1,4 +1,4 @@
-# ReflexLab
+# ReactMeter
 
 Eight free brain and reflex benchmarks - reaction time, aim, typing speed and
 five memory tests - built as a pure static site. No backend, no build step,
@@ -38,11 +38,11 @@ Pick any one:
 
 Then:
 
-1. Buy a domain (~$10/yr). Short and brandable, e.g. `reflexlab.gg`,
+1. Buy a domain (~$10/yr). Short and brandable, e.g. `reactmeter.com`,
    `neurorush.com`, whatever is free - the site name is easy to change
-   (search-and-replace "ReflexLab" plus `siteName` in `js/config.js`).
+   (search-and-replace "ReactMeter" plus `siteName` in `js/config.js`).
 2. Point the domain at your host.
-3. Replace `reflexlab.example` with your domain in `robots.txt` and
+3. Replace `reactmeter.com` with your domain in `robots.txt` and
    `sitemap.xml`, and set `baseUrl` in `js/config.js`.
 4. Submit `sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
 
@@ -130,7 +130,7 @@ data/words.js              word pools for typing/verbal tests
 robots.txt  sitemap.xml  ads.txt
 ```
 
-Scores are stored in localStorage under the key `reflexlab.v1`. Percentiles
+Scores are stored in localStorage under the key `reactmeter.v1`. Percentiles
 are estimated from published population medians for tests of this kind using
 normal/log-normal models in `js/core.js` (`TESTS[...].dist`).
 
