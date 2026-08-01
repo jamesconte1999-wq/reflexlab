@@ -436,10 +436,9 @@
     var slots = $all(".ad-slot");
     var client = CFG.adsense && CFG.adsense.client;
 
-    // Always load the AdSense library when a publisher id is set.
-    // That enables Auto ads (configured in the AdSense dashboard) even
-    // before you create a specific display unit.
-    if (client) {
+    // Load AdSense when publisher id is set, unless the static <head>
+    // snippet is already present (preferred for AdSense site verification).
+    if (client && !document.querySelector('script[src*="adsbygoogle.js"]')) {
       var s = document.createElement("script");
       s.async = true;
       s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(client);
