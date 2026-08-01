@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verbal Memory Test - Seen or New? | ReflexLab</title>
+  <meta name="description" content="Free verbal memory test. Words appear one at a time - press SEEN if the word already appeared, NEW if it hasn't. How long can you keep them all in your head?">
+  <meta property="og:title" content="Verbal Memory Test - ReflexLab">
+  <meta property="og:description" content="Words keep coming. Seen it before, or is it new? Three lives - the pool never stops growing.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ReflexLab">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b1120'/%3E%3Cpath d='M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z' fill='%2322d3ee'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the verbal memory test measure?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Recognition memory for words - your ability to keep a growing pool of items tagged as familiar. It is different from recall: you do not need to reproduce the words, just recognize them, which is why scores can climb far higher than digit tests." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good verbal memory score?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Around 30-35 words is typical. Passing 80 puts you in roughly the top 10% of players, and runs in the hundreds happen when players find a steady rhythm and trust their first instinct." }
+      },
+      {
+        "@type": "Question",
+        "name": "Any strategy tips?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Trust your gut - familiarity judgments are fast and surprisingly accurate, and second-guessing is where most lives are lost. Some players quietly attach a quick image to each new word, which makes it easier to recognize later." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-root="../">
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="brand" href="../">
+        <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+        ReflexLab
+      </a>
+      <nav class="nav">
+        <span class="streak-pill" id="streakPill" hidden></span>
+        <details class="nav-drop">
+          <summary>All tests</summary>
+          <div class="menu">
+            <a href="../reaction-time/">Reaction Time</a>
+            <a href="../aim-trainer/">Aim Trainer</a>
+            <a href="../typing-test/">Typing Speed</a>
+            <a href="../sequence-memory/">Sequence Memory</a>
+            <a href="../number-memory/">Number Memory</a>
+            <a href="../visual-memory/">Visual Memory</a>
+            <a href="../chimp-test/">Chimp Test</a>
+            <a href="../verbal-memory/">Verbal Memory</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="game-head">
+      <h1>Verbal Memory Test</h1>
+      <p>Words appear one at a time. Has this one shown up before? SEEN or NEW - three lives, no time limit.</p>
+    </section>
+
+    <section id="game" class="stage" aria-live="polite"></section>
+
+    <div class="ad-slot" data-ad="display"></div>
+
+    <section class="card-soft content">
+      <h2>How the verbal memory test works</h2>
+      <p>Every word that appears joins a growing pool. When a word comes up, decide whether it already appeared this run (SEEN) or is brand new (NEW). Each correct answer scores a point; each mistake costs one of your three lives. The longer you last, the bigger the pool - and the trickier the judgment calls.</p>
+      <h2>Recognition beats recall</h2>
+      <p>You never have to reproduce a single word here, only recognize it, and human recognition memory is enormous - studies have shown people reliably recognizing thousands of images days later. That is why verbal memory scores dwarf digit-span scores. The failure mode is not forgetting; it is hesitating. Keyboard players can use <span class="kbd">S</span> and <span class="kbd">N</span> to stay in rhythm.</p>
+      <div class="faq">
+        <details>
+          <summary>What does this test measure?</summary>
+          <p>Recognition memory for words - keeping a growing pool of items tagged as familiar. You do not reproduce the words, just recognize them, so scores climb far higher than digit tests.</p>
+        </details>
+        <details>
+          <summary>What is a good score?</summary>
+          <p>Around 30-35 words is typical. Passing 80 is roughly top 10%, and runs in the hundreds happen when players find a rhythm and trust their first instinct.</p>
+        </details>
+        <details>
+          <summary>Any strategy tips?</summary>
+          <p>Trust your gut - familiarity judgments are fast and surprisingly accurate. Second-guessing is where most lives are lost.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-in">
+        <div class="foot-brand">
+          <a class="brand" href="../">
+            <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+            ReflexLab
+          </a>
+          <p>Free brain and reflex benchmarks. Your results stay in your browser.</p>
+        </div>
+        <nav>
+          <a href="../reaction-time/">Reaction Time</a>
+          <a href="../aim-trainer/">Aim Trainer</a>
+          <a href="../typing-test/">Typing Speed</a>
+          <a href="../chimp-test/">Chimp Test</a>
+        </nav>
+        <nav>
+          <a href="../sequence-memory/">Sequence Memory</a>
+          <a href="../number-memory/">Number Memory</a>
+          <a href="../visual-memory/">Visual Memory</a>
+          <a href="../verbal-memory/">Verbal Memory</a>
+        </nav>
+        <nav>
+          <a href="../about/">About</a>
+          <a href="../privacy/">Privacy</a>
+        </nav>
+      </div>
+      <p class="tiny foot-bottom">&copy; <span class="js-year"></span> ReflexLab. Percentiles are statistical estimates, not medical measurements.</p>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/core.js"></script>
+  <script src="../data/words.js"></script>
+  <script src="../js/games/verbal.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* Word pools for the typing test and verbal memory test. */
+window.RLWORDS = {
+  typing: [
+    "the","be","to","of","and","a","in","that","have","it","for","not","on","with","he","as","you","do","at",
+    "this","but","his","by","from","they","we","say","her","she","or","an","will","my","one","all","would",
+    "there","their","what","so","up","out","if","about","who","get","which","go","me","when","make","can",
+    "like","time","no","just","him","know","take","people","into","year","your","good","some","could","them",
+    "see","other","than","then","now","look","only","come","its","over","think","also","back","after","use",
+    "two","how","our","work","first","well","way","even","new","want","because","any","these","give","day",
+    "most","us","is","was","are","been","has","had","were","said","did","having","may","part","long","little",
+    "very","still","old","never","before","great","same","big","group","begin","seem","country","help","talk",
+    "where","turn","problem","every","start","hand","might","show","place","again","off","went","need","house",
+    "world","below","plan","keep","face","fact","water","light","story","saw","far","sea","draw","left","late",
+    "run","while","close","night","real","life","few","north","open","together","next","white","children","got",
+    "walk","example","ease","paper","often","always","music","those","both","mark","book","letter","until",
+    "mile","river","car","feet","care","second","enough","plain","girl","usual","young","ready","above","ever",
+    "red","list","though","feel","state","once","hear","cut","sure","watch","color","wood","main","someone",
+    "center","field","rest","correct","able","pound","done","beauty","drive","stood","contain","front","teach",
+    "week","final","gave","green","quick","develop","ocean","warm","free","minute","strong","special","mind",
+    "behind","clear","tail","produce","street","inch","nothing","course","stay","wheel","full","force","blue",
+    "object","decide","surface","deep","moon","island","foot","system","busy","test","record","boat","common",
+    "gold","possible","plane","dry","wonder","laugh","thousand","ago","ran","check","game","shape","yes","hot",
+    "miss","brought","heat","snow","bed","bring","sit","perhaps","fill","east","weight","language","among",
+    "unit","power","town","fine","certain","fly","fall","lead","cry","dark","machine","note","wait","star",
+    "box","noun","rain","eat","room","friend","began","idea","fish","mountain","stop","base","horse","area",
+    "type","screen","level","press","point","speed","score","focus","train","brain","sharp","react","swift"
+  ],
+  verbal: [
+    "apple","harbor","velvet","quantum","meadow","cipher","lantern","orbit","crimson","whisper","granite",
+    "nebula","saffron","timber","glacier","ember","prism","willow","falcon","cobalt","marble","thunder",
+    "canyon","breeze","mosaic","anchor","dune","sapphire","hollow","vertex","juniper","echo","tundra",
+    "blossom","raven","summit","harvest","riddle","beacon","fable","garnet","zephyr","ripple","forge",
+    "aurora","pepper","cedar","mirage","pulse","quiver","atlas","bramble","copper","drift","enigma",
+    "fjord","gossamer","hazel","ivory","jigsaw","kelp","lagoon","mantle","nectar","onyx","parchment",
+    "quartz","rune","sable","talon","umber","vapor","wander","yonder","zenith","amber","birch","cascade",
+    "delta","ester","fathom","gully","harp","inlet","jasper","kiln","loom","moss","nomad","oasis","pier",
+    "quill","reef","sonnet","thistle","utter","violet","wharf","xylem","yarn","zeal","arc","badge","chalk",
+    "dome","edge","flint","grove","hinge","iris","jolt","knot","ledge","mint","notch","oak","plume","ridge",
+    "silk","trellis","urn","vault","wisp","abbey","bison","cliff","dew","elm","fern","gale","heron","isle",
+    "jade","krill","lark","mesa","newt","otter","pond","quail","rook","swan","teal","vine","wren","yew",
+    "acorn","bell","coral","dusk","flare","gleam","haze","ink","jewel","kite","latch","murmur","nook",
+    "opal","petal","query","rustle","spark","tide","umbra","valley","willowy","zest","brisk","clover",
+    "dapple","evening","frost","glimmer","hearth","icicle","jumble","kernel","lull","mellow","noble",
+    "orchid","pebble","quench","rivet","shimmer","tangle","upward","vivid","waffle","yodel","zipper",
+    "almond","bark","crest","dandelion","emberly","fig","gorge","hush","ionic","jungle","koala","lichen",
+    "meander","nimbus","oxbow","pinnacle","quarry","raspberry","sequoia","truffle","ultra","verdant","walnut"
+  ]
+};

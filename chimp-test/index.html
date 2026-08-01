@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chimp Test - Are You Smarter Than a Chimpanzee? | ReflexLab</title>
+  <meta name="description" content="Take the famous chimp test. Numbers flash on screen, then hide - click them in order from memory. Chimpanzees beat most humans at this. Free, no signup.">
+  <meta property="og:title" content="Chimp Test - ReflexLab">
+  <meta property="og:description" content="Numbers flash, then hide. Click them in order. Chimps crush this test - can you keep up?">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ReflexLab">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b1120'/%3E%3Cpath d='M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z' fill='%2322d3ee'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is it called the chimp test?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It recreates a famous experiment at Kyoto University where a chimpanzee named Ayumu outperformed university students at memorizing the positions of numbers shown for a fraction of a second. Young chimps appear to have extraordinary eidetic-like working memory." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good chimp test score?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most people manage around 9 numbers. Reaching 12-13 is roughly top 10%, and clearing 15 or more is exceptional. Ayumu the chimp handled 9 numbers shown for just 210 milliseconds - far faster exposure than this test allows you." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get better at the chimp test?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Scan the numbers in order before your first click and rehearse the path your hand will travel, not the digits themselves. Treat it as one continuous route across the screen rather than separate locations." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-root="../">
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="brand" href="../">
+        <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+        ReflexLab
+      </a>
+      <nav class="nav">
+        <span class="streak-pill" id="streakPill" hidden></span>
+        <details class="nav-drop">
+          <summary>All tests</summary>
+          <div class="menu">
+            <a href="../reaction-time/">Reaction Time</a>
+            <a href="../aim-trainer/">Aim Trainer</a>
+            <a href="../typing-test/">Typing Speed</a>
+            <a href="../sequence-memory/">Sequence Memory</a>
+            <a href="../number-memory/">Number Memory</a>
+            <a href="../visual-memory/">Visual Memory</a>
+            <a href="../chimp-test/">Chimp Test</a>
+            <a href="../verbal-memory/">Verbal Memory</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="game-head">
+      <h1>Chimp Test</h1>
+      <p>Numbers appear scattered on a grid. Click 1 and the rest go blank - finish the order from memory. Three strikes and it's over.</p>
+    </section>
+
+    <section id="game" class="stage" aria-live="polite"></section>
+
+    <div class="ad-slot" data-ad="display"></div>
+
+    <section class="card-soft content">
+      <h2>How the chimp test works</h2>
+      <p>You start with four numbers placed randomly on a grid. Study them as long as you like - but the instant you click 1, every other number turns into a blank tile. Click the remaining tiles in ascending order from memory. Clear the board and the next round adds one more number. Three mistakes across the run ends the test.</p>
+      <h2>The experiment behind it</h2>
+      <p>In the famous Kyoto University study, a young chimpanzee named Ayumu memorized the positions of nine digits that appeared for about a fifth of a second - faster than a human eye can comfortably scan - and still tapped them in perfect order. University students tested on the same task lost badly. It remains one of the most humbling results in comparative cognition, and this test lets you feel exactly why.</p>
+      <div class="faq">
+        <details>
+          <summary>Why is it called the chimp test?</summary>
+          <p>It recreates the Kyoto University experiment where the chimp Ayumu outperformed university students at memorizing number positions shown for a fraction of a second.</p>
+        </details>
+        <details>
+          <summary>What is a good chimp test score?</summary>
+          <p>Most people manage around 9 numbers. Reaching 12-13 is roughly top 10%, and 15+ is exceptional.</p>
+        </details>
+        <details>
+          <summary>How do I get better?</summary>
+          <p>Scan the numbers in order before your first click and rehearse the path your hand will travel, not the digits. Treat it as one continuous route across the screen.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-in">
+        <div class="foot-brand">
+          <a class="brand" href="../">
+            <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+            ReflexLab
+          </a>
+          <p>Free brain and reflex benchmarks. Your results stay in your browser.</p>
+        </div>
+        <nav>
+          <a href="../reaction-time/">Reaction Time</a>
+          <a href="../aim-trainer/">Aim Trainer</a>
+          <a href="../typing-test/">Typing Speed</a>
+          <a href="../chimp-test/">Chimp Test</a>
+        </nav>
+        <nav>
+          <a href="../sequence-memory/">Sequence Memory</a>
+          <a href="../number-memory/">Number Memory</a>
+          <a href="../visual-memory/">Visual Memory</a>
+          <a href="../verbal-memory/">Verbal Memory</a>
+        </nav>
+        <nav>
+          <a href="../about/">About</a>
+          <a href="../privacy/">Privacy</a>
+        </nav>
+      </div>
+      <p class="tiny foot-bottom">&copy; <span class="js-year"></span> ReflexLab. Percentiles are statistical estimates, not medical measurements.</p>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/core.js"></script>
+  <script src="../js/games/chimp.js"></script>
+</body>
+</html>

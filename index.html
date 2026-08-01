@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReflexLab - Free Reaction Time, Memory &amp; Typing Speed Tests</title>
+  <meta name="description" content="Test your reaction time, aim, memory and typing speed with 8 free brain benchmarks. Get graded, track personal bests, and challenge your friends. No signup.">
+  <meta property="og:title" content="ReflexLab - How fast is your brain?">
+  <meta property="og:description" content="8 free tests for reaction time, aim, memory and typing speed. Get graded and challenge your friends.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ReflexLab">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b1120'/%3E%3Cpath d='M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z' fill='%2322d3ee'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ReflexLab",
+    "description": "Free reaction time, memory, aim and typing speed tests."
+  }
+  </script>
+</head>
+<body data-root="">
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="brand" href="./">
+        <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+        ReflexLab
+      </a>
+      <nav class="nav">
+        <span class="streak-pill" id="streakPill" hidden></span>
+        <details class="nav-drop">
+          <summary>All tests</summary>
+          <div class="menu">
+            <a href="reaction-time/">Reaction Time</a>
+            <a href="aim-trainer/">Aim Trainer</a>
+            <a href="typing-test/">Typing Speed</a>
+            <a href="sequence-memory/">Sequence Memory</a>
+            <a href="number-memory/">Number Memory</a>
+            <a href="visual-memory/">Visual Memory</a>
+            <a href="chimp-test/">Chimp Test</a>
+            <a href="verbal-memory/">Verbal Memory</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>How fast is your brain?</h1>
+      <p>Eight free benchmarks for reaction time, aim, memory and typing speed. Get graded, beat your personal bests, and challenge your friends. No signup, no downloads.</p>
+      <div class="hero-cta">
+        <a class="btn" href="reaction-time/">Test my reaction time</a>
+        <a class="btn btn-ghost" href="#tests">Browse all tests</a>
+      </div>
+      <div class="stats-strip" id="statsStrip" hidden></div>
+    </section>
+
+    <section id="tests">
+      <div class="tests-grid" id="testsGrid"></div>
+    </section>
+
+    <div class="ad-slot" data-ad="display"></div>
+
+    <section class="card-soft content">
+      <h2>Why benchmark your brain?</h2>
+      <p>Reaction speed, short-term memory and typing speed are trainable. Gamers use reflex and aim drills to rank up, students use memory tests to sharpen recall, and anyone who works at a keyboard benefits from faster, more accurate typing. ReflexLab gives you a clean baseline for each skill, then tracks every attempt locally so you can watch yourself improve day by day.</p>
+      <p>Every result comes with an estimated percentile and a letter grade, so a score is never just a number - you always know where you stand against typical players. Keep your daily streak alive to build the habit.</p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Is ReflexLab really free?</summary>
+          <p>Yes. Every test is free, unlimited, and works on desktop and mobile. There is no account, no paywall and no install.</p>
+        </details>
+        <details>
+          <summary>Where are my scores stored?</summary>
+          <p>All results are stored locally in your browser (localStorage). Nothing is uploaded to a server, which also means your history will not follow you across devices.</p>
+        </details>
+        <details>
+          <summary>Which test should I start with?</summary>
+          <p>Reaction Time is the classic starting point - it takes under a minute. After that, try the Chimp Test if you want to be humbled by working memory, or the Typing Test if you live at a keyboard.</p>
+        </details>
+        <details>
+          <summary>How accurate are the percentiles?</summary>
+          <p>Percentiles are statistical estimates based on typical player distributions for tests of this kind. They are great for tracking progress and bragging rights, but they are not a clinical measurement.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-in">
+        <div class="foot-brand">
+          <a class="brand" href="./">
+            <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+            ReflexLab
+          </a>
+          <p>Free brain and reflex benchmarks. Your results stay in your browser.</p>
+        </div>
+        <nav>
+          <a href="reaction-time/">Reaction Time</a>
+          <a href="aim-trainer/">Aim Trainer</a>
+          <a href="typing-test/">Typing Speed</a>
+          <a href="chimp-test/">Chimp Test</a>
+        </nav>
+        <nav>
+          <a href="sequence-memory/">Sequence Memory</a>
+          <a href="number-memory/">Number Memory</a>
+          <a href="visual-memory/">Visual Memory</a>
+          <a href="verbal-memory/">Verbal Memory</a>
+        </nav>
+        <nav>
+          <a href="about/">About</a>
+          <a href="privacy/">Privacy</a>
+        </nav>
+      </div>
+      <p class="tiny foot-bottom">&copy; <span class="js-year"></span> ReflexLab. Percentiles are statistical estimates, not medical measurements.</p>
+    </div>
+  </footer>
+
+  <noscript><p style="text-align:center;padding:20px">ReflexLab needs JavaScript to run its tests.</p></noscript>
+  <script src="js/config.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

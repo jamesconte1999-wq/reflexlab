@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reaction Time Test - Check Your Reflexes in Milliseconds | ReflexLab</title>
+  <meta name="description" content="Free reaction time test. Click when the screen turns green and measure your reflexes in milliseconds over 5 rounds. See your grade, percentile and personal best.">
+  <meta property="og:title" content="Reaction Time Test - ReflexLab">
+  <meta property="og:description" content="Measure your reflexes in milliseconds over 5 rounds. Average is 275 ms - can you beat it?">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ReflexLab">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b1120'/%3E%3Cpath d='M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z' fill='%2322d3ee'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good reaction time?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The median human reaction time to a visual stimulus is around 250-280 milliseconds. Under 200 ms is excellent, and competitive gamers often average 150-190 ms. Anything under 100 ms on this kind of test is usually luck or anticipation rather than a true reaction." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I improve my reaction time?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, to a point. Sleep, hydration, caffeine timing and regular practice all measurably improve reaction speed. Most people can shave 20-40 ms off their average with consistent daily practice, though genetics set the floor." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my reaction time different on my phone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Touchscreens add input latency and screens differ in refresh rate. For your fastest scores, use a desktop with a high refresh rate monitor and a mouse. Compare scores on the same device for fair tracking." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-root="../">
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="brand" href="../">
+        <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+        ReflexLab
+      </a>
+      <nav class="nav">
+        <span class="streak-pill" id="streakPill" hidden></span>
+        <details class="nav-drop">
+          <summary>All tests</summary>
+          <div class="menu">
+            <a href="../reaction-time/">Reaction Time</a>
+            <a href="../aim-trainer/">Aim Trainer</a>
+            <a href="../typing-test/">Typing Speed</a>
+            <a href="../sequence-memory/">Sequence Memory</a>
+            <a href="../number-memory/">Number Memory</a>
+            <a href="../visual-memory/">Visual Memory</a>
+            <a href="../chimp-test/">Chimp Test</a>
+            <a href="../verbal-memory/">Verbal Memory</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="game-head">
+      <h1>Reaction Time Test</h1>
+      <p>When red turns green, click as fast as you can. Five rounds, averaged. The median is about 275 ms - where do you land?</p>
+    </section>
+
+    <section id="game" class="stage" aria-live="polite"></section>
+
+    <div class="ad-slot" data-ad="display"></div>
+
+    <section class="card-soft content">
+      <h2>How the reaction time test works</h2>
+      <p>The box turns red while you wait, then green after a random delay of 1.5 to 4.5 seconds. The moment it flips, click (or press space). We time the gap between the color change and your input, repeat it five times, and average the rounds. Clicking early counts as a false start and restarts the round, so you cannot cheat by spamming.</p>
+      <h2>What counts as fast?</h2>
+      <p>Around 275 ms is the human median for visual stimuli. Regular gamers usually sit between 180 and 230 ms. Elite esports players and F1 drivers reach into the 140-170 ms range. Your score includes your hardware's latency - a high refresh rate monitor and a wired mouse can legitimately buy you 10-30 ms.</p>
+      <div class="faq">
+        <details>
+          <summary>What is a good reaction time?</summary>
+          <p>The median is around 250-280 ms. Under 200 ms is excellent, and competitive gamers often average 150-190 ms. Under 100 ms is usually anticipation, not reaction.</p>
+        </details>
+        <details>
+          <summary>Can I improve my reaction time?</summary>
+          <p>Yes, to a point. Sleep, hydration, caffeine timing and daily practice all help. Most people can shave 20-40 ms off their average with consistent practice, though genetics set the floor.</p>
+        </details>
+        <details>
+          <summary>Why is my reaction time different on my phone?</summary>
+          <p>Touchscreens add input latency and refresh rates differ. For your fastest scores use a desktop with a high refresh monitor and a mouse - and always compare scores from the same device.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-in">
+        <div class="foot-brand">
+          <a class="brand" href="../">
+            <span class="logo"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4h5.2L8.6 22l8.8-11.4h-5.2L13 2z"/></svg></span>
+            ReflexLab
+          </a>
+          <p>Free brain and reflex benchmarks. Your results stay in your browser.</p>
+        </div>
+        <nav>
+          <a href="../reaction-time/">Reaction Time</a>
+          <a href="../aim-trainer/">Aim Trainer</a>
+          <a href="../typing-test/">Typing Speed</a>
+          <a href="../chimp-test/">Chimp Test</a>
+        </nav>
+        <nav>
+          <a href="../sequence-memory/">Sequence Memory</a>
+          <a href="../number-memory/">Number Memory</a>
+          <a href="../visual-memory/">Visual Memory</a>
+          <a href="../verbal-memory/">Verbal Memory</a>
+        </nav>
+        <nav>
+          <a href="../about/">About</a>
+          <a href="../privacy/">Privacy</a>
+        </nav>
+      </div>
+      <p class="tiny foot-bottom">&copy; <span class="js-year"></span> ReflexLab. Percentiles are statistical estimates, not medical measurements.</p>
+    </div>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/core.js"></script>
+  <script src="../js/games/reaction.js"></script>
+</body>
+</html>
