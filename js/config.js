@@ -7,9 +7,8 @@ window.RLCONFIG = {
   siteName: "ReflexLab",
   tagline: "Test your reflexes. Train your brain. Beat the world.",
 
-  // Set this after you connect a domain, e.g. "https://reflexlab.gg".
-  // Used for share links. Leave empty to fall back to the current URL.
-  baseUrl: "",
+  // Used for share links. Update again if you connect a custom domain.
+  baseUrl: "https://reflexlab-400.netlify.app",
 
   // ---- Google AdSense ----------------------------------------------------
   // 1) Get approved at https://adsense.google.com (needs a real domain).

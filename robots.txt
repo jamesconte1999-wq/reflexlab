@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace reflexlab.example with your real domain after deploying
-Sitemap: https://reflexlab.example/sitemap.xml
+Sitemap: https://reflexlab-400.netlify.app/sitemap.xml
