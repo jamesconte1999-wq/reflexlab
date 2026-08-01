@@ -1,5 +1,1 @@
-# ads.txt - required by Google AdSense once you are approved.
-# After approval, delete these comments and add the line below with YOUR
-# publisher id (find it at adsense.google.com under Account > Settings):
-#
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-5571724991048565, DIRECT, f08c47fec0942fa0

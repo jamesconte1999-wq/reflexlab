@@ -434,28 +434,37 @@
 
   function mountAds() {
     var slots = $all(".ad-slot");
-    if (!slots.length) return;
+    var client = CFG.adsense && CFG.adsense.client;
 
-    if (CFG.adsense && CFG.adsense.client) {
+    // Always load the AdSense library when a publisher id is set.
+    // That enables Auto ads (configured in the AdSense dashboard) even
+    // before you create a specific display unit.
+    if (client) {
       var s = document.createElement("script");
       s.async = true;
-      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(CFG.adsense.client);
+      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(client);
       s.setAttribute("crossorigin", "anonymous");
       document.head.appendChild(s);
+    }
+
+    if (!slots.length) return;
+
+    if (client && CFG.adsense.slotDisplay) {
       slots.forEach(function (slot) {
         var ins = document.createElement("ins");
         ins.className = "adsbygoogle";
         ins.style.display = "block";
         ins.style.width = "100%";
-        ins.setAttribute("data-ad-client", CFG.adsense.client);
-        if (CFG.adsense.slotDisplay) ins.setAttribute("data-ad-slot", CFG.adsense.slotDisplay);
+        ins.setAttribute("data-ad-client", client);
+        ins.setAttribute("data-ad-slot", CFG.adsense.slotDisplay);
         ins.setAttribute("data-ad-format", "auto");
         ins.setAttribute("data-full-width-responsive", "true");
         slot.appendChild(ins);
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       });
     } else {
-      // House card until AdSense is configured - keeps layout honest & useful.
+      // House card until a display ad unit slot id is configured.
+      // Auto ads (if enabled in AdSense) can still place ads elsewhere.
       slots.forEach(function (slot) {
         var donate = CFG.donateUrl
           ? '<a class="btn btn-ghost btn-sm" href="' + esc(CFG.donateUrl) + '" target="_blank" rel="noopener">Support us</a>'

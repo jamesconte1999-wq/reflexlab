@@ -17,7 +17,7 @@ window.RLCONFIG = {
   // 4) Update ads.txt in the site root (instructions inside that file).
   // Until configured, ad slots show a tasteful "share the site" house card.
   adsense: {
-    client: "",
+    client: "ca-pub-5571724991048565",
     slotDisplay: ""
   },
 
